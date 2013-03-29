@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+.main{ margin:0 auto; width:100%;}
+.main a img{ width:100%; height:auto;}
+.left{ float:left; background:#aad0dd;width:50%;}
+.right{float:left; background:#aad0dd;width:50%;}
+.left a img,.right a img{ margin:auto;}
